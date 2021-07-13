@@ -92,7 +92,7 @@ def anima(pth,num,lop,track):
 def stop_anmat(arg):
   window.after_cancel(arg)
   
-btn=Button(text="The Button",command=lambda: anima(path,1,t_entry.get(),tracker))
+btn=Button(text="Walk",command=lambda: anima(path,1,t_entry.get(),tracker))
 btn.grid(row=6,column=1)
 window.bind('<Return>', lambda x: anima(path,1,t_entry.get(),tracker))
 
